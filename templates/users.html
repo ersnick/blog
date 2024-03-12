@@ -1,0 +1,17 @@
+{{template "base" .}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{range $user := .Users}}
+    <div class="container col-md-4" style="padding: 5px">
+        <div class="alert alert-primary" role="alert">
+            {{$user.Username}}
+        </div>
+    </div>
+{{end}}
+</body>
+</html>

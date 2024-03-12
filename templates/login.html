@@ -1,0 +1,21 @@
+{{template "base" .}}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div class="container col-md-6" style="padding: 80px">
+    <form method="post" action="/login">
+        <div class="form-group">
+            <label for="exampleInputusername">Username</label>
+            <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter Username" name="username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
+
+</body>
+</html>
